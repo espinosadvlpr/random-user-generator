@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/randome-user-generator/static/js/main.e3a99ecd.js",
+    "index.html": "/randome-user-generator/index.html",
+    "main.e3a99ecd.js.map": "/randome-user-generator/static/js/main.e3a99ecd.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.e3a99ecd.js"
+  ]
+}
