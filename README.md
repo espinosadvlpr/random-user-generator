@@ -5,6 +5,7 @@ In the development of this app were used libraries such as axios for HTTP reques
 This simple application is developed under a modular architecture that will allow you to scale if necessary, in addition to allowing the reuse of components.\
 The tests were created to test the rendering of the components, however due to compatibility errors with libraries such as axios or with the use of contextAPI some of the tests are missing.
 
+**DEPLOY:** This app is deployed and can be proved clicking [here](https://espinosadvlpr.github.io/random-user-generator).
 
 ## Getting Started with Create React App
 
