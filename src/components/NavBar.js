@@ -1,8 +1,7 @@
-import { AppBar, Box, Button, Container, IconButton, Menu, MenuItem, Toolbar, Typography } from '@mui/material'
+import { AppBar, Box, Container, IconButton, Menu, MenuItem, Toolbar, Typography } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu';
 import React from 'react'
-
-const pages = ['Generate', 'Persistence'];
+import { Link } from 'react-router-dom';
 
 function NavBar() {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -65,11 +64,16 @@ function NavBar() {
                                 display: { xs: 'block', md: 'none' },
                             }}
                         >
-                            {pages.map((page) => (
-                                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                    <Typography textAlign="center">{page}</Typography>
-                                </MenuItem>
-                            ))}
+                            <MenuItem>
+                                <Link to='/'>
+                                    <Typography textAlign="center">GENERATE USER</Typography>
+                                </Link>
+                            </MenuItem>
+                            <MenuItem>
+                                <Link to='/users'>
+                                    <Typography textAlign="center">SAVED USERS</Typography>
+                                </Link>
+                            </MenuItem>
                         </Menu>
                     </Box>
                     <Typography
@@ -90,15 +94,20 @@ function NavBar() {
                         RANDOM USER APP
                     </Typography>
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                        {pages.map((page) => (
-                            <Button
-                                key={page}
-                                onClick={handleCloseNavMenu}
-                                sx={{ my: 2, color: 'white', display: 'block' }}
-                            >
-                                {page}
-                            </Button>
-                        ))}
+                        <MenuItem>
+                            <Link to='/'>
+                                <Typography textAlign="center" sx={{ my: 2, color: 'white', display: 'block' }}>
+                                    GENERATE USER
+                                </Typography>
+                            </Link>
+                        </MenuItem>
+                        <MenuItem>
+                            <Link to='/users'>
+                                <Typography textAlign="center" sx={{ my: 2, color: 'white', display: 'block' }}>
+                                    SAVED USERS
+                                </Typography>
+                            </Link>
+                        </MenuItem>
                     </Box>
                 </Toolbar>
             </Container>

@@ -1,13 +1,21 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { ContextProvider } from './application/Context'
 import NavBar from './components/NavBar'
+import UserCard from './pages/UserCard'
+import UserTable from './pages/UserTable'
 import React from 'react'
-import UserCard from './components/user/UserCard'
 
 function App() {
   return (
-    <div>
-      <NavBar />
-      <UserCard />
-    </div>
+    <ContextProvider>
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route path='/' element={<UserCard />}></Route>
+          <Route path='/users' element={<UserTable />}></Route>
+        </Routes>
+      </BrowserRouter>
+    </ContextProvider>
   )
 }
 
