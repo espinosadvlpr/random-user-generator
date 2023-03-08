@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/random-user-generator/static/js/main.0550fbd4.js",
+    "main.js": "/random-user-generator/static/js/main.a696e88a.js",
     "index.html": "/random-user-generator/index.html",
-    "main.0550fbd4.js.map": "/random-user-generator/static/js/main.0550fbd4.js.map"
+    "main.a696e88a.js.map": "/random-user-generator/static/js/main.a696e88a.js.map"
   },
   "entrypoints": [
-    "static/js/main.0550fbd4.js"
+    "static/js/main.a696e88a.js"
   ]
 }
