@@ -1,8 +1,13 @@
+import NavBar from './components/NavBar'
 import React from 'react'
+import UserCard from './components/user/UserCard'
 
 function App() {
   return (
-    <div>App</div>
+    <div>
+      <NavBar />
+      <UserCard />
+    </div>
   )
 }
 
