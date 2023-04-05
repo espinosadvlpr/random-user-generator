@@ -7,10 +7,6 @@ The tests were created to test the rendering of the components, however due to c
 
 **DEPLOY:** This app is deployed and can be proved clicking [here](https://espinosadvlpr.github.io/random-user-generator).
 
-## Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Available Scripts
 
 In the project directory, you can run:
